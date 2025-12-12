@@ -1,6 +1,25 @@
 #ifndef LIST_PEMINJAMAN_H_INCLUDED
 #define LIST_PEMINJAMAN_H_INCLUDED
 
+struct Buku;
+struct Anggota;
 
+struct Peminjaman {
+    string idPeminjaman;
+    string tanggalPinjam;
+    string tanggalKembali;
+    float denda;
+};
+
+struct elmPeminjaman {
+    Peminjaman info;
+    elmPeminjaman *next;
+};
+
+typedef elmPeminjaman* adrPinjam;
+
+struct ListPeminjaman {
+    adrPinjam first;
+};
 
 #endif // LIST_PEMINJAMAN_H_INCLUDED
