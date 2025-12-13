@@ -1,5 +1,5 @@
 #include "list_peminjaman.h"
-
+#include <string>
 void createList(ListPeminjaman &L) {
     L.first = NULL;
 }
